@@ -6,9 +6,13 @@ class Pessoa
     public $nome;
     public $idade;
 
-    public function correr()
+    public function correr($km)
     {
-        echo $this->nome . " correu!";
+        echo $this->nome . " esta correndo!";
+        for($i = 0; $km > $i; $i++){
+            echo ".";
+        }
+        echo $this->nome . "Terminou de Correr!";
     }
 
 }
@@ -21,4 +25,4 @@ $pessoa2 = new pessoa();
 $pessoa2->nome = "Cesar";
 $pessoa2->idade = 20;
 
-echo $pessoa1->correr();
+echo $pessoa1->correr(50);
