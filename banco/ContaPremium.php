@@ -6,4 +6,11 @@ class ContaPremium extends Conta
     {
         $this->saldo += 10;
     }
+
+    protected function calculoDeposito($valor)
+    {
+        $valorNormal = parent::calculoDeposito($valor);
+
+        return $valorNormal += 20;
+    }
 }
