@@ -9,10 +9,9 @@
 require_once "Produto.php";
 require_once "Tenis.php";
 
-$tenis = new Tenis();
+$tenis = new TenisAdidas();
+$tenis->getCor();
 
-if($tenis instanceof Produto){
-    echo "E um tipo tenis";
-}else{
-    echo "Nao e um tipo tenis";
-}
+$tenis2 = new SapaTenis();
+$tenis2->getCor();
+$tenis2->getTamanho();
