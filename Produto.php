@@ -2,7 +2,7 @@
 
 class Produto
 {
-    public $nome;
+    private $nome;
     public $descricao;
     public $valor;
     public $estoque;
@@ -18,7 +18,7 @@ class Produto
     }
     */
 
-    public function baixaEstoque()
+    private function baixaEstoque()
     {
         $this->estoque = $this->estoque - 1;
     }
