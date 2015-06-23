@@ -10,3 +10,11 @@ require_once "Produto.php";
 require_once "Tenis.php";
 
 $produto = new Produto();
+
+$produto
+    ->setNome("Tenis Exemplo")
+    ->setDescricao("Essa e a descricao do produto")
+    ->setEstoque(10)
+    ->setValor(1000)
+;
+
