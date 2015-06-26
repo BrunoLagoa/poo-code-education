@@ -29,7 +29,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="/" class="navbar-brand">Home</a>
+            <a href="#" class="navbar-brand">Home</a>
         </div>
         <nav class="collapse navbar-collapse" role="navigation">
             <ul class="nav navbar-nav">
@@ -45,91 +45,80 @@
 <div class="container">
     <div class="row">
 
-        <div class="col-md-12">
+        <div class="col-md-11">
 
             <div class="panel">
                 <div class="panel-body">
 
                     <?php
+                    require_once('PessoaFisica.php');
+                    require_once('PessoaJuridica.php');
 
-                    require_once('Cliente.php');
+                    $pessoa1 = new PessoaFisica('Bruno Castro',30,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
+                    $pessoa2 = new PessoaFisica('Danilo Oliveira',18,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
+                    $pessoa3 = new PessoaFisica('Maria Oliveira',20,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
+                    $pessoa4 = new PessoaFisica('Ana Clara',32,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
+                    $pessoa5 = new PessoaFisica('Oliveira Silva',22,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
 
-                    $lista = [
-                        '1' => [
-                            'nome'      => 'Danilo Oliveira',
-                            'cpf'       => '12312312323',
-                            'endereco'  => 'Rua Piaui',
-                            'cidade'    => 'Lagoa Santa',
-                            'estado'    => 'MG',
-                            'telefone'  => '(31)88601111'
-                        ],
-                        '2' => [
-                            'nome'      => 'Bruno Cesar',
-                            'cpf'       => '12312312323',
-                            'endereco'  => 'Rua Piaui',
-                            'cidade'    => 'Lagoa Santa',
-                            'estado'    => 'MG',
-                            'telefone'  => '(31)88602222'
-                        ],
-                        '3' => [
-                            'nome'      => 'Maria Oliveira',
-                            'cpf'       => '12312312323',
-                            'endereco'  => 'Rua Piaui',
-                            'cidade'    => 'Lagoa Santa',
-                            'estado'    => 'MG',
-                            'telefone'  => '(31)88603333'
-                        ]                        ,
-                        '4' => [
-                            'nome'      => 'Ana Clara',
-                            'cpf'       => '12312312323',
-                            'endereco'  => 'Rua Piaui',
-                            'cidade'    => 'Lagoa Santa',
-                            'estado'    => 'MG',
-                            'telefone'  => '(31)88604444'
-                        ]
+                    $pessoa6  = new PessoaJuridica('Cesar Duarte',33,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
+                    $pessoa7  = new PessoaJuridica('Carla Magalhães',15,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
+                    $pessoa8  = new PessoaJuridica('José Castro',19,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
+                    $pessoa9  = new PessoaJuridica('Magnata Romeu',25,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
+                    $pessoa10 = new PessoaJuridica('Erica Ferreia',26,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
 
-                    ];
-
-                    $ordem = isset($_GET['ordem']) ? $_GET['ordem'] : '';
-
-                    $clientes = new Cliente();
-                    if($ordem == "ascendente"){
-                        $clientes = $clientes->ordemCliente($lista, "nome");
-                    }else{
-                        $clientes = $clientes->ordemCliente($lista, "nome", true);
-                    }
+                    $lista = array($pessoa1, $pessoa2, $pessoa3, $pessoa4, $pessoa5, $pessoa6, $pessoa7, $pessoa8, $pessoa9, $pessoa10);
 
                     ?>
+                    <br /><br />
+                    <table id="tableCliente" class="table table-bordered table-hover" cellspacing="0" width="100%">
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Tipo</th>
+                            <th>Indentificação</th>
+                            <th>Ação</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php foreach($lista as $key => $value){?>
+                        <tr>
+                            <td><?php echo $value->getNome(); ?></td>
+                            <td><?php echo $value->getTipo(); ?></td>
+                            <td><?php echo $value->getCodigo(); ?></td>
+                            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#<?php echo $key; ?>">Dados Completo</button></td>
+                        </tr>
 
-                    <div class="btn-group">
-                        <form method="get" >
-                        <a href="index.php?ordem=ascendente" title="Valor" class="btn btn-success">Ordem ascendente </a>
-                        <a href="index.php?ordem=descendente" title="Valor" class="btn btn-warning">Ordem descendente </a>
-                        </form>
-                    </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="<?php echo $key; ?>" role="dialog">
+                            <div class="modal-dialog">
 
-                    <?php foreach ($clientes as $key => $value) { ?>
-                    <div class="bs-list-name">
-                        <div class="panel-group" id="accordion">
-                            <div class="panel panel-info">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#<?php echo $key; ?>"><?php echo $value['nome']; ?> - Clique para mostrar dados completo</a>
-                                    </h4>
-                                </div>
-                                <div id="<?php echo $key; ?>" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p><b>CPF:</b> <?php echo $value['cpf']; ?></p>
-                                        <p><b>Endereço:</b> <?php echo $value['endereco']; ?></p>
-                                        <p><b>Cidade:</b> <?php echo $value['cidade']; ?></p>
-                                        <p><b>Estado:</b> <?php echo $value['estado']; ?></p>
-                                        <p><b>Telefone:</b> <?php echo $value['telefone']; ?></p>
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Dados Cliente: <?php echo $value->getNome(); ?></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><b>Idade:</b> <?php echo $value->getIdade(); ?></p>
+                                        <p><b>Endereço:</b> <?php echo $value->getEndereco(); ?></p>
+                                        <p><b>Endereço de Cobrança:</b> <?php echo $value->getEnderecoCobranca(); ?></p>
+                                        <p><b>Cidade:</b> <?php echo $value->getCidade(); ?></p>
+                                        <p><b>Estado:</b> <?php echo $value->getEstado(); ?></p>
+                                        <p><b>Telefone:</b> <?php echo $value->getTelefone(); ?></p>
+                                        <p><b>RG:</b> <?php echo $value->getCodigo(); ?></p>
+                                        <p><b>Grau de Importância:</b> <?php echo $value->getEstrela(); ?></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Sair</button>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
-                    </div>
-                    <?php } ?>
+                        <?php } ?>
+
+                        </tbody>
+                    </table>
 
 
                 </div>
@@ -162,5 +151,17 @@
 <!-- script references -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+<script src="//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#tableCliente').dataTable( {
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.10.7/i18n/Portuguese-Brasil.json"
+            }
+        } );
+    } );
+</script>
 </body>
 </html>
