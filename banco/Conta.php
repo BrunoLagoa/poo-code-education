@@ -4,7 +4,7 @@ class Conta
 {
     protected $saldo;
 
-    public function depositar($valor)
+    public final function depositar($valor)
     {
         $this->saldo += $this->calculoDeposito($valor);
         return true;
