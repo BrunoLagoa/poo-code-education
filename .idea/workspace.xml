@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b84fab-642d-410d-96d4-94b67598016b" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\wamp\www\poo-code-education\cadastro-de-clientes\Cliente.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/banco/ContaAbstract.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/banco/Conta.php" afterPath="$PROJECT_DIR$/banco/Conta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/banco/ContaPremium.php" afterPath="$PROJECT_DIR$/banco/ContaPremium.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadastro-de-clientes/Pessoa.php" afterPath="$PROJECT_DIR$/cadastro-de-clientes/Pessoa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadastro-de-clientes/PessoaFisica.php" afterPath="$PROJECT_DIR$/cadastro-de-clientes/PessoaFisica.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadastro-de-clientes/PessoaInterFace.php" afterPath="$PROJECT_DIR$/cadastro-de-clientes/PessoaInterFace.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadastro-de-clientes/PessoaJuridica.php" afterPath="$PROJECT_DIR$/cadastro-de-clientes/PessoaJuridica.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadastro-de-clientes/README.md" afterPath="$PROJECT_DIR$/cadastro-de-clientes/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadastro-de-clientes/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/cadastro-de-clientes/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadastro-de-clientes/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/cadastro-de-clientes/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/banco/index.php" afterPath="$PROJECT_DIR$/banco/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadastro-de-clientes/index.php" afterPath="$PROJECT_DIR$/cadastro-de-clientes/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadastro-de-clientes/css/styles.css" afterPath="$PROJECT_DIR$/cadastro-de-clientes/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="poo-code-education.iws" />
@@ -34,22 +45,11 @@
     <favorites_list name="poo-code-education" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Conta.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/banco/Conta.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15716487" vertical-offset="0" max-vertical-offset="649">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cadastro-de-clientes" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -63,8 +63,6 @@
         <option value="$PROJECT_DIR$/interfaces/ComputadorDesktop.php" />
         <option value="$PROJECT_DIR$/interfaces/ComputadorNotebook.php" />
         <option value="$PROJECT_DIR$/interfaces/index.php" />
-        <option value="$PROJECT_DIR$/banco/index.php" />
-        <option value="$PROJECT_DIR$/banco/ContaPremium.php" />
         <option value="$PROJECT_DIR$/Produto.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Pessoa.php" />
@@ -73,11 +71,14 @@
         <option value="$PROJECT_DIR$/cadastro-de-clientes/PessoaInterface.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/js/PessoaFisica.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/PessoaInterFace.php" />
-        <option value="$PROJECT_DIR$/cadastro-de-clientes/PessoaFisica.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/PessoaJuridica.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/Pessoa.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/index.php" />
         <option value="$PROJECT_DIR$/banco/Conta.php" />
+        <option value="$PROJECT_DIR$/banco/ContaAbstract.php" />
+        <option value="$PROJECT_DIR$/banco/ContaPremium.php" />
+        <option value="$PROJECT_DIR$/banco/index.php" />
+        <option value="$PROJECT_DIR$/cadastro-de-clientes/PessoaFisica.php" />
       </list>
     </option>
   </component>
@@ -86,8 +87,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1599" />
-    <option name="height" value="860" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -131,6 +134,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -159,13 +163,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="banco" />
+              <option name="myItemId" value="cadastro-de-clientes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,8 +250,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1599" height="860" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32859176" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32859176" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -256,7 +259,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975364" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24951267" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18193632" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13239075" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32859176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -313,6 +316,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/banco/Conta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/Pessoa.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1751">
@@ -345,7 +356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1836">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -353,7 +363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4573">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -382,7 +391,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4573">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -411,7 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2482">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -461,13 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2091">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/PessoaInterFace.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="238">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -541,64 +541,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/banco/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23574731" vertical-offset="0" max-vertical-offset="649">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/banco/ContaPremium.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23574731" vertical-offset="0" max-vertical-offset="649">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/PessoaJuridica.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.26923" vertical-offset="48" max-vertical-offset="1105">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/PessoaFisica.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.884615" vertical-offset="456" max-vertical-offset="1105">
-          <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/Pessoa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39291218" vertical-offset="1037" max-vertical-offset="1972">
-          <caret line="76" column="10" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/README.md">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/index.php">
+    <entry file="file://$PROJECT_DIR$/banco/ContaAbstract.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7734977" vertical-offset="736" max-vertical-offset="2924">
-          <caret line="111" column="84" selection-start-line="111" selection-start-column="84" selection-end-line="111" selection-end-column="84" />
+        <state vertical-scroll-proportion="0.5112782" vertical-offset="0" max-vertical-offset="665">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/banco/Conta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15716487" vertical-offset="0" max-vertical-offset="649">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.20451128" vertical-offset="0" max-vertical-offset="665">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/banco/ContaPremium.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30676693" vertical-offset="0" max-vertical-offset="665">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/banco/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02556391" vertical-offset="0" max-vertical-offset="665">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1428572" vertical-offset="1127" max-vertical-offset="2924">
+          <caret line="111" column="84" selection-start-line="111" selection-start-column="84" selection-end-line="111" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/Pessoa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33233082" vertical-offset="0" max-vertical-offset="1972">
+          <caret line="13" column="5" selection-start-line="12" selection-start-column="3" selection-end-line="13" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/PessoaInterFace.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15338346" vertical-offset="0" max-vertical-offset="665">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/PessoaJuridica.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0270677" vertical-offset="48" max-vertical-offset="1105">
+          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/PessoaFisica.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05112782" vertical-offset="255" max-vertical-offset="1105">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
           <folding />
         </state>
       </provider>
