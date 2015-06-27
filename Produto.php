@@ -7,6 +7,16 @@ class Produto
     private $valor;
     private $estoque;
 
+    public function iniciaProcesso()
+    {
+        echo "----- Iniciando processo -----";
+    }
+
+    public function finalizaProcesso()
+    {
+        echo "----- Finaliza processo -----";
+    }
+
     /**
      * @return mixed
      */
@@ -46,6 +56,7 @@ class Produto
      */
     public function getValor()
     {
+        $this->iniciaProcesso();
         return $this->valor;
     }
 
