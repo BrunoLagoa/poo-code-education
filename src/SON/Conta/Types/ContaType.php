@@ -1,6 +1,8 @@
 <?php
 
-class Conta extends ContaAbstract
+namespace SON\Conta\Types;
+
+class Conta extends \SON\Conta\ContaAbstract
 {
     protected function calculoDeposito($valor)
     {

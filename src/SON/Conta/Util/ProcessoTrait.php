@@ -1,5 +1,7 @@
 <?php
 
+namespace SON\conta\Util;
+
 trait ProcessoTrait
 {
     public function iniciaProcesso()

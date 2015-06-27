@@ -1,8 +1,10 @@
 <?php
 
+namespace SON\Conta;
+
 abstract class ContaAbstract
 {
-    use ProcessoTrait;
+    use Util\ProcessoTrait;
 
     protected $saldo;
 
