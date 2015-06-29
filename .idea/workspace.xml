@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b84fab-642d-410d-96d4-94b67598016b" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\wamp\www\poo-code-education\cadastro-de-clientes\Pessoa.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\poo-code-education\cadastro-de-clientes\PessoaInterFace.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SON/Conta/Types/ContaPremiumType.php" afterPath="$PROJECT_DIR$/src/SON/Conta/Types/ContaPremiumType.php" />
     </list>
     <ignored path="poo-code-education.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PessoaAbstract.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/PessoaAbstract.php">
+      <file leaf-file-name="ContaPremiumType.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SON/Conta/Types/ContaPremiumType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47669172" vertical-offset="1383" max-vertical-offset="2074">
-              <caret line="100" column="29" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.23007518" vertical-offset="0" max-vertical-offset="665">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -49,7 +47,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cadastro-de-clientes" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -82,12 +80,12 @@
         <option value="$PROJECT_DIR$/cadastro-de-clientes/GrauDeImportancia.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/PJInterFace.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/PFInterFace.php" />
-        <option value="$PROJECT_DIR$/src/SON/Conta/Types/ContaPremiumType.php" />
         <option value="$PROJECT_DIR$/src/SON/Conta/ContaAbstract.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/PessoaAbstract.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/PessoaFisica.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/PessoaJuridica.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/index.php" />
+        <option value="$PROJECT_DIR$/src/SON/Conta/Types/ContaPremiumType.php" />
       </list>
     </option>
   </component>
@@ -207,20 +205,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Types" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poo-code-education" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poo-code-education" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cadastro-de-clientes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -627,14 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SON/Conta/Types/ContaPremiumType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="221">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/PFInterFace.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="204">
@@ -685,8 +661,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/PessoaAbstract.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47669172" vertical-offset="1383" max-vertical-offset="2074">
-          <caret line="100" column="29" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.8857143" vertical-offset="1383" max-vertical-offset="2074">
+          <caret line="116" column="1" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SON/Conta/Types/ContaPremiumType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23007518" vertical-offset="0" max-vertical-offset="665">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding />
         </state>
       </provider>
