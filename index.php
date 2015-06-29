@@ -9,3 +9,7 @@ $x = new SON\Conta\Types\ContaType();
 $x->depositar(10);
 echo $x->getSaldo();
 
+$bancoSantander = new SON\Banco\Santander();
+$bancoSantander->setNome("Santander Exempo");
+$bancoSantander->getConta()->depositar(10);
+
