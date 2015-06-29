@@ -1,20 +1,11 @@
 <?php
 
-//require_once "PessoaAbstract.php";
-//$pessoa1 = new Pessoa("Bruno",30);
-//$pessoa2 = new Pessoa("Cesar",20);
-//
-//echo $pessoa1->correr(50);
+define('CLASS_DIR', 'src/');
+set_include_path(get_include_path().PATH_SEPARATOR.CLASS_DIR);
+spl_autoload_register();
 
-require_once "Produto.php";
-require_once "Tenis.php";
 
-$produto = new Produto();
-
-$produto
-    ->setNome("Tenis Exemplo")
-    ->setDescricao("Essa e a descricao do produto")
-    ->setEstoque(10)
-    ->setValor(1000)
-;
+$x = new SON\Conta\Types\ContaType();
+$x->depositar(10);
+echo $x->getSaldo();
 
