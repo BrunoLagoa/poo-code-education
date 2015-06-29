@@ -84,7 +84,7 @@
                         <tr>
                             <td><?php echo $value->getNome(); ?></td>
                             <td><?php echo $value->getTipo(); ?></td>
-                            <td><?php echo $value->getCodigo(); ?></td>
+                            <td><?php  echo ( $value->getTipo() == "Pessoa Física" ? $value->getCPF() : $value->getCNPJ() ); ?></td>
                             <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#<?php echo $key; ?>">Dados Completo</button></td>
                         </tr>
 
@@ -105,7 +105,7 @@
                                         <p><b>Cidade:</b> <?php echo $value->getCidade(); ?></p>
                                         <p><b>Estado:</b> <?php echo $value->getEstado(); ?></p>
                                         <p><b>Telefone:</b> <?php echo $value->getTelefone(); ?></p>
-                                        <p><b>RG:</b> <?php echo $value->getCodigo(); ?></p>
+                                        <p><b>RG:</b> <?php echo ( $value->getTipo() == "Pessoa Física" ? $value->getCPF() : $value->getCNPJ() ); ?></p>
                                         <p><b>Grau de Importância:</b> <?php echo $value->getEstrela(); ?></p>
                                     </div>
                                     <div class="modal-footer">

@@ -1,18 +1,18 @@
 <?php
 
-require_once('Pessoa.php');
-require_once('PessoaInterFace.php');
+require_once('PessoaAbstract.php');
+require_once('PFInterFace.php');
 
-class PessoaFisica extends Pessoa implements PessoaInterFace
+class PessoaFisica extends PessoaAbstract implements PFInterFace
 {
-    private $rg;
+    private $cpf;
     private $estrela;
     private $enderecoCobranca;
 
-    public function __construct($nome, $idade, $endereco, $cidade, $estado, $telefone, $rg, $estrela, $enderecoCobranca=null)
+    public function __construct($nome, $idade, $endereco, $cidade, $estado, $telefone, $cpf, $estrela, $enderecoCobranca=null)
     {
         parent::__construct($nome, $idade, $endereco, $cidade, $estado, $telefone, "Pessoa Física");
-        $this->setCodigo($rg);
+        $this->setCPF($cpf);
         $this->setEstrela($estrela);
 
         if($enderecoCobranca == null)
@@ -46,15 +46,15 @@ class PessoaFisica extends Pessoa implements PessoaInterFace
         return $this->enderecoCobranca;
     }
 
-    public function setCodigo($rg)
+    public function setCPF($valor)
     {
-        $this->rg = $rg;
+        $this->cpf = $valor;
         return $this;
     }
 
-    public function getCodigo()
+    public function getCPF()
     {
-        return $this->rg;
+        return $this->cpf;
     }
 
 }

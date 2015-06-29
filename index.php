@@ -1,6 +1,6 @@
 <?php
 
-//require_once "Pessoa.php";
+//require_once "PessoaAbstract.php";
 //$pessoa1 = new Pessoa("Bruno",30);
 //$pessoa2 = new Pessoa("Cesar",20);
 //
