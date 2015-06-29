@@ -5,11 +5,12 @@ set_include_path(get_include_path().PATH_SEPARATOR.CLASS_DIR);
 spl_autoload_register();
 
 
-$x = new SON\Conta\Types\ContaType();
-$x->depositar(10);
-echo $x->getSaldo();
+$conta = new SON\Conta\Types\ContaType();
+$conta->depositar(10);
 
 $bancoSantander = new SON\Banco\Santander();
+$bancoSantander->setConta($conta);
+
 $bancoSantander->setNome("Santander Exempo");
-$bancoSantander->getConta()->depositar(10);
+$bancoSantander->getConta()->getSaldo();
 
