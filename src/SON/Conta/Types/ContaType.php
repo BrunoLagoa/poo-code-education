@@ -2,7 +2,9 @@
 
 namespace SON\Conta\Types;
 
-class Conta extends \SON\Conta\ContaAbstract
+use \SON\Conta\ContaAbstract as ContaAbstrata;
+
+class Conta extends ContaAbstrata
 {
     protected function calculoDeposito($valor)
     {

@@ -2,9 +2,11 @@
 
 namespace SON\Conta;
 
+use SON\Conta\Util\ProcessoTrait;
+
 abstract class ContaAbstract
 {
-    use Util\ProcessoTrait;
+    use ProcessoTrait;
 
     protected $saldo;
 
