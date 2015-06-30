@@ -6,7 +6,7 @@ use \SON\Conta\ContaAbstract as ContaAbstrata;
 
 class ContaType extends ContaAbstrata
 {
-    protected function calculoDeposito($valor)
+    public function calculoDeposito($valor)
     {
         return $valor += 10;
     }

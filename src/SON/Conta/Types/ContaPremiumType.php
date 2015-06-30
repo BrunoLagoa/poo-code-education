@@ -15,4 +15,9 @@ class ContaPremium extends ContaAbstrata
     {
         return $valor += 20;
     }
+
+    public function calculoDeposito($valor)
+    {
+
+    }
 }

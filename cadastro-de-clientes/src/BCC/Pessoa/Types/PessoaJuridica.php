@@ -1,7 +1,9 @@
 <?php
 
-require_once('PessoaAbstract.php');
-require_once('PJInterFace.php');
+namespace BCC\Pessoa\Types;
+
+use BCC\Pessoa\PessoaAbstract;
+use BCC\Pessoa\Interfaces\PJInterFace;
 
 class PessoaJuridica extends PessoaAbstract implements PJInterFace
 {

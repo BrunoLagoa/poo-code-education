@@ -36,6 +36,6 @@ abstract class ContaAbstract
         return $this->saldo;
     }
 
-    abstract protected function calculoDeposito($valor);
+    abstract public function calculoDeposito($valor);
 
 }

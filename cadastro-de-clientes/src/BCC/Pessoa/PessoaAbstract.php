@@ -1,5 +1,7 @@
 <?php
 
+namespace BCC\Pessoa;
+
 abstract class PessoaAbstract {
 
     protected $nome;

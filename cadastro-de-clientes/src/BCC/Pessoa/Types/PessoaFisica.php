@@ -1,7 +1,9 @@
 <?php
 
-require_once('PessoaAbstract.php');
-require_once('PFInterFace.php');
+namespace BCC\Pessoa\Types;
+
+use BCC\Pessoa\PessoaAbstract;
+use BCC\Pessoa\Interfaces\PFInterFace;
 
 class PessoaFisica extends PessoaAbstract implements PFInterFace
 {

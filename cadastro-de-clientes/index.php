@@ -51,20 +51,22 @@
                 <div class="panel-body">
 
                     <?php
-                    require_once('PessoaFisica.php');
-                    require_once('PessoaJuridica.php');
 
-                    $pessoa1 = new PessoaFisica('Bruno Castro',30,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
-                    $pessoa2 = new PessoaFisica('Danilo Oliveira',18,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
-                    $pessoa3 = new PessoaFisica('Maria Oliveira',20,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
-                    $pessoa4 = new PessoaFisica('Ana Clara',32,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
-                    $pessoa5 = new PessoaFisica('Oliveira Silva',22,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
+                    define('CLASS_DIR', 'src/');
+                    set_include_path(get_include_path().PATH_SEPARATOR.CLASS_DIR);
+                    spl_autoload_register();
 
-                    $pessoa6  = new PessoaJuridica('Cesar Duarte',33,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
-                    $pessoa7  = new PessoaJuridica('Carla Magalhães',15,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
-                    $pessoa8  = new PessoaJuridica('José Castro',19,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
-                    $pessoa9  = new PessoaJuridica('Magnata Romeu',25,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
-                    $pessoa10 = new PessoaJuridica('Erica Ferreia',26,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
+                    $pessoa1 = new BCC\Pessoa\Types\PessoaFisica('Bruno Castro',30,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
+                    $pessoa2 = new BCC\Pessoa\Types\PessoaFisica('Danilo Oliveira',18,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
+                    $pessoa3 = new BCC\Pessoa\Types\PessoaFisica('Maria Oliveira',20,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
+                    $pessoa4 = new BCC\Pessoa\Types\PessoaFisica('Ana Clara',32,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
+                    $pessoa5 = new BCC\Pessoa\Types\PessoaFisica('Oliveira Silva',22,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
+
+                    $pessoa6  = new BCC\Pessoa\Types\PessoaJuridica('Cesar Duarte',33,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
+                    $pessoa7  = new BCC\Pessoa\Types\PessoaJuridica('Carla Magalhães',15,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
+                    $pessoa8  = new BCC\Pessoa\Types\PessoaJuridica('José Castro',19,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
+                    $pessoa9  = new BCC\Pessoa\Types\PessoaJuridica('Magnata Romeu',25,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
+                    $pessoa10 = new BCC\Pessoa\Types\PessoaJuridica('Erica Ferreia',26,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
 
                     $lista = array($pessoa1, $pessoa2, $pessoa3, $pessoa4, $pessoa5, $pessoa6, $pessoa7, $pessoa8, $pessoa9, $pessoa10);
 
