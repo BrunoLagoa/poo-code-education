@@ -1,7 +1,7 @@
-# cadastro-de-clientes
-Curso POO Code Education - poo-code-education
+# poo-code-education
+Curso POO Code Education
 
-Separando os projeto em uma Repositories separado
+POO Orientação a Objeto
 
 # Fase 2 do projeto
 <b>Cadastro de clientes</b>
@@ -41,8 +41,10 @@ Separando os projeto em uma Repositories separado
 
  - Você também terá a opção de criar clientes que utilizão endereço específico de cobrança, nesse caso, crie uma interface para que esses tipos de clientes possam implementar.
 
+```
  <b>Obs:</b>
  <i>Por favor, observe os pontos da segunda fase do projeto:</i>
+```
 
  - O exercício pede para implementar uma interface para Grau de Importância e outra para Endereço de Cobrança.
 
@@ -78,5 +80,27 @@ Separando os projeto em uma Repositories separado
 
   - Deixe todo o fonte de sua aplicação no mesmo nível que o DocumentRoot do servidor web. Deixe a pasta que está visível para web (seu DocumentRoot) apenas com o index.php e os demais assets(css, javascript e imagens).
   
+  <hr>
+  
+   # Fase 5 do projeto
+   <b>Persistência de dados</b>
+  
+  - Nessa última fase do projeto, você, ao invés de trabalhar com arrays, você deverá persistir essas informações no banco de dados.
+  
+  - Em suas fixtures, você deverá criar uma classe com métodos específicos para persistirem dados no banco. Você terá que injetar no construtor dessa classe um objeto PDO (somente PDO).
+  
+  - Crie um método chamado persist dentro dessa mesma classe; esse método deverá receber como dependência um objeto do tipo Cliente.
+  
+  - E para finalizar, crie um método chamado flush. Quando o método for executado, os dados devem ser persistidos no banco de dados.
+  
+  - Perceba que a responsabilidade de gravar os dados no banco são especificamente dessa classe, sem adicionar nenhuma outra responsabilidade a ela.
+  
+  Boa sorte!
+  
+  ```
+   <b>Obs:</b>
+   <i>Depois disso implementado, a listagem dos clientes devem ser chamadas a partir do banco de dados e não mais de um conjunto de arrays.</i>
+  ```
+  
   ------------------------------------------------------------------------------------------
-  [Bruno Castro](http://www.bhzautomacao.com.br) - Web design e development
+  [Bruno Castro](http://www.bhzautomacao.com.br) - Development

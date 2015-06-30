@@ -56,13 +56,19 @@
                     set_include_path(get_include_path().PATH_SEPARATOR.CLASS_DIR);
                     spl_autoload_register();
 
-                    $sqlite = "sqlite:database.sqlite";
-                    $pdo = new PDO($sqlite);
+                    $pessoa1 = new BCC\Pessoa\Types\PessoaFisica('Bruno Castro',30,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
+                    $pessoa2 = new BCC\Pessoa\Types\PessoaFisica('Danilo Oliveira',18,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
+                    $pessoa3 = new BCC\Pessoa\Types\PessoaFisica('Maria Oliveira',20,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
+                    $pessoa4 = new BCC\Pessoa\Types\PessoaFisica('Ana Clara',32,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
+                    $pessoa5 = new BCC\Pessoa\Types\PessoaFisica('Oliveira Silva',22,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
 
+                    $pessoa6  = new BCC\Pessoa\Types\PessoaJuridica('Cesar Duarte',33,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
+                    $pessoa7  = new BCC\Pessoa\Types\PessoaJuridica('Carla Magalhães',15,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
+                    $pessoa8  = new BCC\Pessoa\Types\PessoaJuridica('José Castro',19,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
+                    $pessoa9  = new BCC\Pessoa\Types\PessoaJuridica('Magnata Romeu',25,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
+                    $pessoa10 = new BCC\Pessoa\Types\PessoaJuridica('Erica Ferreia',26,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
 
-                    $stmt = $pdo->prepare("SELECT * FROM clientes");
-                    $stmt->execute();
-                    $lista = $stmt->fetchAll(PDO::FETCH_OBJ);
+                    $lista = array($pessoa1, $pessoa2, $pessoa3, $pessoa4, $pessoa5, $pessoa6, $pessoa7, $pessoa8, $pessoa9, $pessoa10);
 
                     ?>
                     <br /><br />
@@ -78,9 +84,9 @@
                         <tbody>
                         <?php foreach($lista as $key => $value){?>
                         <tr>
-                            <td><?php echo $value->nome; ?></td>
-                            <td><?php echo $value->tipo; ?></td>
-                            <td><?php echo ( $value->tipo == "Pessoa Física" ? $value->cpf : $value->cnpj ); ?></td>
+                            <td><?php echo $value->getNome(); ?></td>
+                            <td><?php echo $value->getTipo(); ?></td>
+                            <td><?php  echo $value->getDocumento(); ?></td>
                             <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#<?php echo $key; ?>">Dados Completo</button></td>
                         </tr>
 
@@ -92,17 +98,17 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Dados Cliente: <?php echo $value->nome; ?></h4>
+                                        <h4 class="modal-title">Dados Cliente: <?php echo $value->getNome(); ?></h4>
                                     </div>
                                     <div class="modal-body">
-                                        <p><b>Idade:</b> <?php echo $value->idade; ?></p>
-                                        <p><b>Endereço:</b> <?php echo $value->endereco; ?></p>
-                                        <p><b>Endereço de Cobrança:</b> <?php echo $value->enderecoCobranca; ?></p>
-                                        <p><b>Cidade:</b> <?php echo $value->cidade; ?></p>
-                                        <p><b>Estado:</b> <?php echo $value->estado; ?></p>
-                                        <p><b>Telefone:</b> <?php echo $value->telefone; ?></p>
-                                        <p><b>Documento:</b> <?php echo ( $value->tipo == "Pessoa Física" ? $value->cpf : $value->cnpj ); ?></p>
-                                        <p><b>Grau de Importância:</b> <?php echo $value->grauImportancia; ?></p>
+                                        <p><b>Idade:</b> <?php echo $value->getIdade(); ?></p>
+                                        <p><b>Endereço:</b> <?php echo $value->getEndereco(); ?></p>
+                                        <p><b>Endereço de Cobrança:</b> <?php echo $value->getEnderecoCobranca(); ?></p>
+                                        <p><b>Cidade:</b> <?php echo $value->getCidade(); ?></p>
+                                        <p><b>Estado:</b> <?php echo $value->getEstado(); ?></p>
+                                        <p><b>Telefone:</b> <?php echo $value->getTelefone(); ?></p>
+                                        <p><b>Documento:</b> <?php echo ( $value->getTipo() == "Pessoa Física" ? $value->getCPF() : $value->getCNPJ() ); ?></p>
+                                        <p><b>Grau de Importância:</b> <?php echo $value->getEstrela(); ?></p>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-warning" data-dismiss="modal">Sair</button>

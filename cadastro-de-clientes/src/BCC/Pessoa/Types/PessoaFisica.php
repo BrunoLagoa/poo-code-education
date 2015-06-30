@@ -59,4 +59,9 @@ class PessoaFisica extends PessoaAbstract implements PFInterFace
         return $this->cpf;
     }
 
+    public function getDocumento()
+    {
+        return $this->getCPF();
+    }
+
 }

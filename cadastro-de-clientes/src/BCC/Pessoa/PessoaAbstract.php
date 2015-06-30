@@ -111,6 +111,7 @@ abstract class PessoaAbstract {
         return $this;
     }
 
+    abstract public function getDocumento();
     abstract public function setEnderecoCobranca($valor);
     abstract public function getEnderecoCobranca();
     abstract public function setEstrela($valor);

@@ -59,4 +59,9 @@ class PessoaJuridica extends PessoaAbstract implements PJInterFace
         return $this->cnpj;
     }
 
+    public function getDocumento()
+    {
+        return $this->getCNPJ();
+    }
+
 }
