@@ -14,3 +14,9 @@ $bancoSantander->setConta($conta);
 $bancoSantander->setNome("Santander Exempo");
 $bancoSantander->getConta()->getSaldo();
 
+
+$resultado = Math::somar(10,10);
+//Math::$valor;
+
+
+
