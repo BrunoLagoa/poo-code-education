@@ -8,7 +8,7 @@ spl_autoload_register();
 $conta = new SON\Conta\Types\ContaType();
 $conta->depositar(10);
 
-$bancoSantander = new SON\Banco\Santander();
+$bancoSantander = new SON\Banco\Santander($conta);
 $bancoSantander->setConta($conta);
 
 $bancoSantander->setNome("Santander Exempo");
