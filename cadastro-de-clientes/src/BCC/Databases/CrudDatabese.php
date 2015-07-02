@@ -19,7 +19,7 @@ class CrudDatabese extends ConnectAbstract
     {
         try{
             $this->connect->beginTransaction();
-            $cadastrar = "INSERT INTO clientes (nome,idade,endereco,enderecoCobranca,cidade,estado,telefone,tipo,grauImportancia,cpf,cnpj ) VALUES (:nome, :idade, :endereco, :enderecoCobranca, :cidade, :estado, :telefone, :tipo, :grauImportancia, :cpf, :cnpj)";
+            $cadastrar = "INSERT INTO clientes (nome,idade,endereco,enderecoCobranca,cidade,estado,telefone,tipo,grauImportancia,cpf,cnpj) VALUES (:nome, :idade, :endereco, :enderecoCobranca, :cidade, :estado, :telefone, :tipo, :grauImportancia, :cpf, :cnpj)";
             $dados = $this->connect->prepare($cadastrar);
             $dados->execute(array(
                 "nome"          => $clientes->getNomeRS(),
