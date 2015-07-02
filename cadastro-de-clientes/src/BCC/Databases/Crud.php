@@ -2,11 +2,19 @@
 
 namespace BCC\Databases;
 
+use BCC\Databases\Abstracts\DataBasesAbstract;
 use BCC\Pessoa\PessoaAbstract;
 use BCC\Pessoa\Types\PessoaFisica;
 use BCC\Pessoa\Types\PessoaJuridica;
 
-class CrudDatabese extends ConnectAbstract
+
+/**
+ * Class Crud
+ * Classe responsável por fazer o CRUD com PDO ao banco de dados
+ * @package src\BCC\Databases
+ * @var PDO
+ */
+class Crud //extends DataBasesAbstract
 {
     private $connect;
 
@@ -15,15 +23,23 @@ class CrudDatabese extends ConnectAbstract
         $this->connect = $connect;
     }
 
-    public function persist($clientes)
+    public function persist(PessoaFisica $clientes)
     {
         try{
             $this->connect->beginTransaction();
-            $cadastrar = "INSERT INTO clientes (nome,idade,endereco,enderecoCobranca,cidade,estado,telefone,tipo,grauImportancia,cpf,cnpj) VALUES (:nome, :idade, :endereco, :enderecoCobranca, :cidade, :estado, :telefone, :tipo, :grauImportancia, :cpf, :cnpj)";
+            $cadastrar = "INSERT INTO clientes (nome,idade,endereco,enderecoCobranca,cidade,estado,telefone,tipo,grauImportancia,cpf) VALUES (:nome, :idade, :endereco, :enderecoCobranca, :cidade, :estado, :telefone, :tipo, :grauImportancia, :cpf)";
             $dados = $this->connect->prepare($cadastrar);
             $dados->execute(array(
-                "nome"          => $clientes->getNomeRS(),
-                "email"         => $clientes->getEmail()
+                "nome"          => $clientes->getNome(),
+                "idade"         => $clientes->getIdade(),
+                "endereco"          => $clientes->getEndereco(),
+                "enderecoCobranca"           => $clientes->getEnderecoCobranca(),
+                "cidade"      => $clientes->getCidade(),
+                "estado"           => $clientes->getEstado(),
+                "telefone"        => $clientes->getTelefone(),
+                "tipo"        => $clientes->getTipo(),
+                "grauImportancia"           => $clientes->getEstrela(),
+                "cpf"   => $clientes->getCPF()
             ));
             $this->connect->lastInsertId();
         } catch (PDOException $e) {
@@ -42,7 +58,7 @@ class CrudDatabese extends ConnectAbstract
         }
         return true;
     }
-
+    
     public function read()
     {
 
@@ -60,13 +76,12 @@ class CrudDatabese extends ConnectAbstract
 
     public function update()
     {
-
+        
     }
-
+    
     public function delete()
     {
-
+        
     }
 }
 
-$db = new \CrudDatabese();

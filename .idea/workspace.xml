@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b84fab-642d-410d-96d4-94b67598016b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Fixtures/ClienteFixture.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/CrudDatabese.php" afterPath="$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/CrudDatabese.php" />
+      <change type="DELETED" beforePath="C:\wamp\www\poo-code-education\cadastro-de-clientes\src\BCC\Databases\Conexao.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\poo-code-education\cadastro-de-clientes\src\BCC\Databases\CrudDatabese.php" afterPath="" />
+      <change type="MOVED" beforePath="C:\wamp\www\poo-code-education\cadastro-de-clientes\src\BCC\Fixtures\ClienteFixture.php" afterPath="$PROJECT_DIR$/cadastro-de-clientes/fixtures.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="poo-code-education.iws" />
@@ -35,48 +36,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ClienteFixture.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Fixtures/ClienteFixture.php">
+      <file leaf-file-name="fixtures.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/fixtures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13082707" vertical-offset="644" max-vertical-offset="1309">
-              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.07669173" vertical-offset="0" max-vertical-offset="1292">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
               <folding>
-                <marker date="1435850997951" expanded="true" signature="281:859" placeholder="CREATE TABLE..IF..." />
-                <marker date="1435850997951" expanded="true" signature="1062:1081" placeholder="DROP TABLE c..." />
+                <element signature="e#7#30#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php_BACKUP" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/index.php_BACKUP">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="2958">
-              <caret line="68" column="151" selection-start-line="58" selection-start-column="20" selection-end-line="68" selection-end-column="151" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrudDatabese.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/CrudDatabese.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617" vertical-offset="153" max-vertical-offset="1292">
-              <caret line="21" column="137" selection-start-line="21" selection-start-column="137" selection-end-line="21" selection-end-column="137" />
-              <folding>
-                <marker date="1435850997930" expanded="true" signature="462:694" placeholder="INSERT INTO ..." />
-                <marker date="1435850997930" expanded="true" signature="1686:1709" placeholder="SELECT * FRO..clientes..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Conexao.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/Conexao.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.884615" vertical-offset="0" max-vertical-offset="731">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="37" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -90,9 +57,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/banco/index.php" />
-        <option value="$PROJECT_DIR$/Produto.php" />
-        <option value="$PROJECT_DIR$/banco/ProcessoTrait.php" />
         <option value="$PROJECT_DIR$/banco/ContaAbstract.php" />
         <option value="$PROJECT_DIR$/src/SON/Conta/Util/ProcessoTrait.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/PessoaInterFace.php" />
@@ -133,14 +97,17 @@
         <option value="$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Pessoa/Types/PessoaJuridica.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/README.md" />
-        <option value="$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/Connect.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/ConnectAbstract.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/ConnectDatabase.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/Conexao.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/CrudConexao.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/index.php" />
-        <option value="$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/CrudDatabese.php" />
         <option value="$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Fixtures/ClienteFixture.php" />
+        <option value="$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/CrudDatabese.php" />
+        <option value="$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/Abstracts/DataBasesAbstract.php" />
+        <option value="$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/Connect.php" />
+        <option value="$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/Crud.php" />
+        <option value="$PROJECT_DIR$/cadastro-de-clientes/fixtures.php" />
       </list>
     </option>
   </component>
@@ -196,7 +163,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -251,60 +217,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poo-code-education" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poo-code-education" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cadastro-de-clientes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BCC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fixtures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poo-code-education" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poo-code-education" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cadastro-de-clientes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BCC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Databases" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,6 +231,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\poo-code-education\cadastro-de-clientes\src\BCC\Fixtures" />
       <recent name="C:\wamp\www\poo-code-education\cadastro-de-clientes" />
       <recent name="C:\wamp\www" />
     </key>
@@ -342,9 +258,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -352,6 +265,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -391,7 +307,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32859176" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32859176" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -399,7 +315,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975364" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24951267" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22043702" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22300771" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32859176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -430,9 +346,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17218973" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -453,25 +369,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/Conexao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="731">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="37" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/CrudDatabese.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1309">
-          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Pessoa/Interfaces/PFInterFace.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
@@ -655,13 +557,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Pessoa/PessoaAbstract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-73.88461" vertical-offset="0" max-vertical-offset="2125">
-          <caret line="113" column="4" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="153">
@@ -753,13 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Pessoa/Types/PessoaFisica.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1224">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Pessoa/Types/PessoaJuridica.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1224">
@@ -795,47 +683,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43458647" vertical-offset="1309" max-vertical-offset="2856">
-          <caret line="94" column="102" selection-start-line="94" selection-start-column="102" selection-end-line="94" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/index.php_BACKUP">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="2958">
-          <caret line="68" column="151" selection-start-line="58" selection-start-column="20" selection-end-line="68" selection-end-column="151" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2958">
+          <caret line="76" column="28" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/Conexao.php">
+    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Pessoa/Types/PessoaFisica.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.884615" vertical-offset="0" max-vertical-offset="731">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="37" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/CrudDatabese.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="153" max-vertical-offset="1292">
-          <caret line="21" column="137" selection-start-line="21" selection-start-column="137" selection-end-line="21" selection-end-column="137" />
+        <state vertical-scroll-proportion="0.4857143" vertical-offset="0" max-vertical-offset="1224">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
           <folding>
-            <marker date="1435850997930" expanded="true" signature="462:694" placeholder="INSERT INTO ..." />
-            <marker date="1435850997930" expanded="true" signature="1686:1709" placeholder="SELECT * FRO..clientes..." />
+            <element signature="e#36#66#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Fixtures/ClienteFixture.php">
+    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Pessoa/PessoaAbstract.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13082707" vertical-offset="644" max-vertical-offset="1309">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.10225564" vertical-offset="0" max-vertical-offset="2125">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462" vertical-offset="646" max-vertical-offset="2856">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/Crud.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="204" max-vertical-offset="1598">
+          <caret line="29" column="132" selection-start-line="29" selection-start-column="132" selection-end-line="29" selection-end-column="132" />
           <folding>
-            <marker date="1435850997951" expanded="true" signature="281:859" placeholder="CREATE TABLE..IF..." />
-            <marker date="1435850997951" expanded="true" signature="1062:1081" placeholder="DROP TABLE c..." />
+            <element signature="e#33#79#0#PHP" expanded="true" />
+            <marker date="1435874914444" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1435874914444" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..clientes..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/Connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="578">
+          <caret line="6" column="75" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/src/BCC/Databases/Abstracts/DataBasesAbstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="561">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1435873456465" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastro-de-clientes/fixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07669173" vertical-offset="0" max-vertical-offset="1292">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding>
+            <element signature="e#7#30#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
