@@ -1,7 +1,10 @@
 <?php
 
+require_once('autoload.php');
+
 use BCC\Databases\Crud;
 use BCC\Databases\Connect;
+use BCC\Pessoa\Types\PessoaFisica;
 
 
 function criarDb() {
@@ -29,7 +32,8 @@ function criarDb() {
         telefone VARCHAR( 250 ) NOT NULL,
         tipo VARCHAR( 250 ) NOT NULL,
         cpf VARCHAR( 250 ) NOT NULL,
-        cnpj VARCHAR( 250 ) NOT NULL);";
+        cnpj VARCHAR( 250 ) NOT NULL,
+        grauImportancia VARCHAR( 250 ) NOT NULL);";
         $pdo->exec($tabl);
         print("A tabela {$table} foi criada com sucesso!<br>");
 
