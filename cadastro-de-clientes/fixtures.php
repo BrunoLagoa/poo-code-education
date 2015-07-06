@@ -46,29 +46,32 @@ function criarDb() {
 criarDb();
 
 $pessoa1 = new BCC\Pessoa\Types\PessoaFisica('Bruno Castro',30,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
-$insert = new Crud(Connect::getDb());
-$insert->persist($pessoa1);
-$insert->flush();
+//$insert = new Crud(Connect::getDb());
+//$insert->persist($pessoa1);
+//$insert->flush();
 
 ////////////////////////////////////////////////////////////////////////////
 
 $pessoa2 = new BCC\Pessoa\Types\PessoaFisica('Danilo Oliveira',18,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
-$insert = new Crud(Connect::getDb());
-$insert->persist($pessoa2);
-$insert->flush();
+//$insert = new Crud(Connect::getDb());
+//$insert->persist($pessoa2);
+//$insert->flush();
 
 ////////////////////////////////////////////////////////////////////////////
 
-$pessoa3  = new BCC\Pessoa\Types\PessoaFisica('Cesar Duarte',33,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
-$insert = new Crud(Connect::getDb());
-$insert->persist($pessoa3);
-$insert->flush();
+$pessoa3  = new BCC\Pessoa\Types\PessoaJuridica('Cesar Duarte',33,'Rua piaui','Lagoa Santa','MG',3188604212,'10256256/0001-18',5);
+//$insert = new Crud(Connect::getDb());
+//$insert->persist($pessoa3);
+//$insert->flush();
 
 
 ////////////////////////////////////////////////////////////////////////////
 
 $pessoa4  = new BCC\Pessoa\Types\PessoaFisica('Carla Magalhães',15,'Rua piaui','Lagoa Santa','MG',3188604212,'MG1566192',5);
 $insert = new Crud(Connect::getDb());
+$insert->persist($pessoa1);
+$insert->persist($pessoa2);
+$insert->persist($pessoa3);
 $insert->persist($pessoa4);
 $insert->flush();
 

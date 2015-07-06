@@ -13,7 +13,7 @@ class PessoaJuridica extends PessoaAbstract implements PJInterFace
 
     public function __construct($nome, $idade, $endereco, $cidade, $estado, $telefone, $cnpj, $estrela, $enderecoCobranca=null)
     {
-        parent::__construct($nome, $idade, $endereco, $cidade, $estado, $telefone, "Pessoa Jurídica");
+        parent::__construct($nome, $idade, $endereco, $cidade, $estado, $telefone, "Pessoa Juridica");
         $this->setCNPJ($cnpj);
         $this->setEstrela($estrela);
 

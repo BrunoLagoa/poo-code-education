@@ -13,7 +13,7 @@ class PessoaFisica extends PessoaAbstract implements PFInterFace
 
     public function __construct($nome, $idade, $endereco, $cidade, $estado, $telefone, $cpf, $estrela, $enderecoCobranca=null)
     {
-        parent::__construct($nome, $idade, $endereco, $cidade, $estado, $telefone, "Pessoa Física");
+        parent::__construct($nome, $idade, $endereco, $cidade, $estado, $telefone, "Pessoa Fisica");
         $this->setCPF($cpf);
         $this->setEstrela($estrela);
 

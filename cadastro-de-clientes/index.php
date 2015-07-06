@@ -56,8 +56,8 @@
                     set_include_path(get_include_path().PATH_SEPARATOR.CLASS_DIR);
                     spl_autoload_register();
 
-                    $sqlite = "sqlite:database.sqlite";
-                    $pdo = new PDO($sqlite);
+                    //$sqlite = "sqlite:database.sqlite";
+                    $pdo = new PDO('mysql:host=localhost;dbname=curso_code_education', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 
 
                     $stmt = $pdo->prepare("SELECT * FROM clientes");
@@ -80,7 +80,7 @@
                         <tr>
                             <td><?php echo $value->nome; ?></td>
                             <td><?php echo $value->tipo; ?></td>
-                            <td><?php echo ( $value->tipo == "Pessoa Física" ? $value->cpf : $value->cnpj ); ?></td>
+                            <td><?php echo ( $value->tipo == "Pessoa Fisica" ? $value->cpf : $value->cnpj ); ?></td>
                             <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#<?php echo $key; ?>">Dados Completo</button></td>
                         </tr>
 
@@ -101,7 +101,7 @@
                                         <p><b>Cidade:</b> <?php echo $value->cidade; ?></p>
                                         <p><b>Estado:</b> <?php echo $value->estado; ?></p>
                                         <p><b>Telefone:</b> <?php echo $value->telefone; ?></p>
-                                        <p><b>Documento:</b> <?php echo ( $value->tipo == "Pessoa Física" ? $value->cpf : $value->cnpj ); ?></p>
+                                        <p><b>Documento:</b> <?php echo ( $value->tipo == "Pessoa Fisica" ? $value->cpf : $value->cnpj ); ?></p>
                                         <p><b>Grau de Importância:</b> <?php echo $value->grauImportancia; ?></p>
                                     </div>
                                     <div class="modal-footer">

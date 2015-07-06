@@ -18,45 +18,63 @@ class Crud //extends DataBasesAbstract
 {
     private $connect;
 
-    public function __construct(\PDO $connect) {
-        $connect instanceof \PDO;
-        $this->connect = $connect;
+    protected $pdo;
+    protected $pessoas;
+
+    public function __construct(\PDO $pdo)
+    {
+        $this->pdo = $pdo;
+        $this->pessoas = array();
     }
 
-    public function persist(PessoaFisica $clientes)
+    public function persist(PessoaAbstract $pessoa)
     {
-        try{
-            $this->connect->beginTransaction();
-            $cadastrar = "INSERT INTO clientes (nome,idade,endereco,enderecoCobranca,cidade,estado,telefone,tipo,grauImportancia,cpf) VALUES (:nome, :idade, :endereco, :enderecoCobranca, :cidade, :estado, :telefone, :tipo, :grauImportancia, :cpf)";
-            $dados = $this->connect->prepare($cadastrar);
-            $dados->execute(array(
-                "nome"          => $clientes->getNome(),
-                "idade"         => $clientes->getIdade(),
-                "endereco"          => $clientes->getEndereco(),
-                "enderecoCobranca"           => $clientes->getEnderecoCobranca(),
-                "cidade"      => $clientes->getCidade(),
-                "estado"           => $clientes->getEstado(),
-                "telefone"        => $clientes->getTelefone(),
-                "tipo"        => $clientes->getTipo(),
-                "grauImportancia"           => $clientes->getEstrela(),
-                "cpf"   => $clientes->getCPF()
-            ));
-            $this->connect->lastInsertId();
-        } catch (PDOException $e) {
-            echo "ERROR: Não foi possível cadastrar dados no banco!";
-            die("Código: {$e->getCode()} <br> Mensagem: {$e->getMessage()} <br>  Arquivo: {$e->getFile()} <br> linha: {$e->getLine()}");
-        }
+        $this->pessoas[] = $pessoa;
     }
 
     public function flush()
     {
-        try{
-            $this->connect->commit();
-        } catch (PDOException $e) {
-            echo "ERROR: Não foi possível cadastrar dados no banco!";
-            die("Código: {$e->getCode()} <br> Mensagem: {$e->getMessage()} <br>  Arquivo: {$e->getFile()} <br> linha: {$e->getLine()}");
+        foreach($this->pessoas as $pessoa) {
+            $tipo = $pessoa->getTipo();
+            if($tipo == "Pessoa Juridica")
+            {
+                $this->pdo->beginTransaction();
+                $cadastrar = "INSERT INTO clientes (nome,idade,endereco,enderecoCobranca,cidade,estado,telefone,tipo,grauImportancia,cnpj) VALUES (:nome, :idade, :endereco, :enderecoCobranca, :cidade, :estado, :telefone, :tipo, :grauImportancia, :cnpj)";
+                $dados = $this->pdo->prepare($cadastrar);
+                $dados->execute(array(
+                    "nome"          => $pessoa->getNome(),
+                    "idade"         => $pessoa->getIdade(),
+                    "endereco"          => $pessoa->getEndereco(),
+                    "enderecoCobranca"           => $pessoa->getEnderecoCobranca(),
+                    "cidade"      => $pessoa->getCidade(),
+                    "estado"           => $pessoa->getEstado(),
+                    "telefone"        => $pessoa->getTelefone(),
+                    "tipo"        => $pessoa->getTipo(),
+                    "grauImportancia"           => $pessoa->getEstrela(),
+                    "cnpj"   => $pessoa->getCNPJ()
+                ));
+                $this->pdo->lastInsertId();
+                $this->pdo->commit();
+            }else{
+                $this->pdo->beginTransaction();
+                $cadastrar = "INSERT INTO clientes (nome,idade,endereco,enderecoCobranca,cidade,estado,telefone,tipo,grauImportancia,cpf) VALUES (:nome, :idade, :endereco, :enderecoCobranca, :cidade, :estado, :telefone, :tipo, :grauImportancia, :cpf)";
+                $dados = $this->pdo->prepare($cadastrar);
+                $dados->execute(array(
+                    "nome"          => $pessoa->getNome(),
+                    "idade"         => $pessoa->getIdade(),
+                    "endereco"          => $pessoa->getEndereco(),
+                    "enderecoCobranca"           => $pessoa->getEnderecoCobranca(),
+                    "cidade"      => $pessoa->getCidade(),
+                    "estado"           => $pessoa->getEstado(),
+                    "telefone"        => $pessoa->getTelefone(),
+                    "tipo"        => $pessoa->getTipo(),
+                    "grauImportancia"           => $pessoa->getEstrela(),
+                    "cpf"   => $pessoa->getCPF()
+                ));
+                $this->pdo->lastInsertId();
+                $this->pdo->commit();
+            }
         }
-        return true;
     }
     
     public function read()
